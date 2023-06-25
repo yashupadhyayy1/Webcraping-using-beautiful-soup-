@@ -1,18 +1,19 @@
-# Webcraping-using-beautiful-soup.
-**Web Scraping using Beautiful Soup**
+# Web Scraping using Beautiful Soup
 
-```python
-from bs4 import BeautifulSoup
-import requests
+This code snippet demonstrates how to perform web scraping using Beautiful Soup, a popular Python library for parsing HTML and XML documents.
 
-# Make a request to the website
-response = requests.get(url)
+## Dependencies
 
-# Create a BeautifulSoup object
-soup = BeautifulSoup(response.content, 'html.parser')
+The code requires the following dependencies:
+- `BeautifulSoup`: The main library used for parsing and navigating HTML content.
+- `requests`: A library for making HTTP requests to fetch the web page content.
 
-# Find and extract specific elements
-data = soup.find('div', class_='class-name').text
+Make sure you have these libraries installed before running the code.
 
-# Print the extracted data
-print(data)
+## Usage
+
+1. Import the necessary libraries:
+   ```python
+   from bs4 import BeautifulSoup
+   import requests
+   ```
